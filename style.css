@@ -1,17 +1,232 @@
 *{
+    font-family: 'PT Sans', sans-serif;
     border: 1px solid black;
     margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    padding: 0 86px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 .header{
     height: 73px;
     background-color: rgba(38, 92, 154, 1);
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 86px;
 }
+
 .header_info{
-display: flex;
-color: white;
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
 }
+.logo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.number{
+    margin: 0 86px;
+    font-size: 19px;
+}
+.search{
+    position: relative;
+}
+.header_input-search{
+    background-color: rgba(245, 245, 220, 0);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #517DAE;
+    font-size: 16px;
+    width: 281px;
+    color: white;
+}
+
+.header_info input::-webkit-input-placeholder {
+    color:#ffffff;
+    padding-left: 20px ;
+}
+.header .search:before{
+content: url('images/serch.svg');
+position:absolute;
+
+}
+
+.header_delivery{
+    color: white;
+    text-decoration-line:underline;
+}
+.menu-header{
+    height: 46px;
+    background-color:rgba(31, 73, 123, 1);
+    color: white;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+.menu-item{
+    margin-right: 39px;
+}
+.menu-item_link{
+    color:white;
+    text-decoration: none;
+}
+
+.basket{
+display: flex;
+align-items: center;
+}
+
+.logo-basket{
+    padding-right: 9px;
+}
+.tittle-basket{
+    font-size: 16px;
+}
+.filter{
+    display: flex;
+    align-items:center;
+    margin: 25px 0 0 86px;
+}
+.carret{
+    position: relative;
+}
+
+.input-filter {
+    width: 264px;
+    height: 48px;
+    padding: 10px;
+    margin-right: 17px;
+    border: 1px solid #D0D0D0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #484848;
+    appearance: none;
+    cursor: pointer;
+}
+ .filter div::before{
+    content: url(images/caret-down\ 1.png);
+    position:absolute;
+    left: 234px;
+    top: 17px;
+}
+
+  
+.input-filter_price{
+    height: 48px;
+    width: 132px;
+    padding-left: 30px;
+    border: 1px solid #D0D0D0;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+.tittle-input_price{
+    margin-left: 27px;
+    margin-right: 14px;
+    font-size: 16px;
+}
+
+.tittle-input_value{
+    margin-left: 9px;
+    font-size: 16px;
+}
+.filter input::-webkit-input-placeholder {
+    position: absolute;
+    right: 11px;
+    top: 14px;
+}
+.tittle-before, .tittle-from{
+    position: relative;
+}
+.filter .tittle-from::before{
+    content:'от';
+    position:absolute;
+    top: 13px;
+    left: 11px;
+}
+.filter .tittle-before::before{
+    content: 'от';
+    position:absolute;
+    top: 13px;
+    left: 12px;
+}
+.wrapper-produkt{
+display: grid;
+grid-template-columns: 2fr 1fr 1fr ;
+margin: 23px 86px 0 86px;
+}
+.firstproduct{
+display: flex;
+border: 1px solid rgba(222, 222, 222, 1);
+
+}
+.image-firstproduct{
+    height: 250px;
+}
+.product{
+border: 1px solid rgba(222, 222, 222, 1);
+padding: 21px 22px 14px 23px;
+}
+.image-product{
+    height: 160px;
+    width: 160px;
+    background-image:url('images/product.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+.tittle-product{
+    margin-top: 10px ;
+    font-weight: 400;
+}
+.discription-product{
+    margin-top: 6px;
+    color: rgba(151, 151, 151, 1);
+
+}
+.line-product{
+    width: 100%;
+    height:1px;
+    background-color: rgba(142, 172, 252, 1);
+    margin-top: 21px;
+}
+.price-product{
+    margin-top: 5px;
+    font-size: 20px;
+    color: rgba(50, 90, 192, 1);
+}
+.secondproduct{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 86px;
+
+}
+
+/* .image-firstproduct{
+    width: 100%;
+    height: 100%;
+
+} */
+/* .firstprodoct{
+    display: flex;
+}
+.image-firstproduct{
+    width: 250px;
+    height: 250px;
+    margin-top: 21px;
+}
+.option-firstproduct{
+    width: 252px;
+    margin-top: 27px;
+}
+.firstprodoct, .product{
+    border: 1px solid rgba(222, 222, 222, 1);
+
+} */
